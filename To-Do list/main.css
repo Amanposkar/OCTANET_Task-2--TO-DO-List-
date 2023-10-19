@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center; /* Horizontally center the container */
+    align-items: center; /* Vertically center the container */
+    height: 50vh; /* 100% of viewport height */
+	background: linear-gradient(135deg,#153677,#4e085f);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+		text-align: center;
+		color: #333;
+		text-transform: uppercase;
+		font-size: 32px; /* Increase font size */
+		margin: 5px 0; /* Add some margin space */
+		padding: 10px; /* Add padding for visual separation */
+		background-color: #0064ce; /* Background color for the heading */
+		color: #fff; /* Text color for the heading */
+		border-radius: 5px; /* Rounded corners for the heading */
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+		transition: background-color 0.2s, transform 0.2s; /* Smooth transitions */
+		cursor: pointer;
+	}
+	
+	h1:hover {
+		background-color: #0056b3;
+		transform: scale(1.05); /* Slight scaling effect on hover */
+	}
+
+.input-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffae00;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.2s; /* Add smooth hover transition */
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.task {
+    flex: 1;
+}
+
+/* New style for completed tasks */
+li.completed {
+    color: #888;
+    text-decoration: line-through;
+}
